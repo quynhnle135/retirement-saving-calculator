@@ -8,14 +8,17 @@
 <body>
     <h1>Welcome to Retirement Saving Calculator!</h1>
     <form>
-        <label for="deposit-amount">How much will you deposit each time?</label>
-        <input id="deposit-amount" placeholder="Amount" type="number">
+        <label for="current-age">Current age: </label>
+        <input id="current-age" type="number" placeholder="For example: 25">
         <br>
-        <label for="years">How many years will you deposit?</label>
-        <input id="years" placeholder="Years" type="number">
+        <label for="retirement-age">Retirement age: </label>
+        <input id="retirement-age" type="number" placeholder="For example: 65">
         <br>
-        <label for="interest-rate">What is the interest rate(%)?</label>
-        <input id="interest-rate" placeholder="Rate" type="number">
+        <label for="contribution">Monthly contribution ($): </label>
+        <input id="contribution" type="number" placeholder="For example: 500">
+        <br>
+        <label for="interest-rate">Interest rate (%): </label>
+        <input id="interest-rate" type="number">
         <br>
         <button type="button" onclick="calculateSaving()">Calculate</button>
     </form>
