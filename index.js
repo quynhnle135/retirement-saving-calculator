@@ -5,9 +5,10 @@ function calculateSaving() {
     const retirementAge = parseInt(document.getElementById('retirement-age').value);
     const t = retirementAge - curAge;
     r = (r / 100) / 12;
-    let result = p * ((Math.pow((1 + r), 12 * t) - 1) / r);
+    let a = Math.round((p * ((Math.pow((1 + r), 12 * t) - 1) / r)) * 100) / 100;
+    let result = a.toLocaleString('en-US');
     
-    document.getElementById('result').innerText = `What you'll have: $${result.toFixed(2)}`;
+    document.getElementById('result').innerText = `What you'll have: $${result}`;
 }
 
 function requireMonthlyContribution() {
@@ -18,7 +19,8 @@ function requireMonthlyContribution() {
     let n = (retirementAge - curAge) * 12;
     r = (r / 100) / 12;
 
-    let result = a * (r / (Math.pow((1 + r), n) - 1));
+    let p = Math.round((a * (r / (Math.pow((1 + r), n) - 1))) * 100) / 100;
+    let result = p.toLocaleString('en-US');
 
-    document.getElementById('result-1').innerText = `Your monthly contribution should be: $${result.toFixed(2)}`;
+    document.getElementById('result-1').innerText = `Your monthly contribution should be: $${result}`;
 }
