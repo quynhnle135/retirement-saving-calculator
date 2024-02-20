@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retirement Saving Calculator</title>
+    <title>Retirement Savings Calculator</title>
 </head>
 <body>
-    <h1>Welcome to Retirement Saving Calculator!</h1>
+    <h1>Welcome to Retirement Savings Calculator!</h1>
     <form>
-        <label for="current-age">Current age: </label>
+        <label for="current-age">Current age:</label>
         <input id="current-age" type="number" placeholder="For example: 25">
         <br>
-        <label for="retirement-age">Retirement age: </label>
+        <label for="retirement-age">Age of retirement: </label>
         <input id="retirement-age" type="number" placeholder="For example: 65">
         <br>
         <label for="contribution">Monthly contribution ($): </label>
         <input id="contribution" type="number" placeholder="For example: 500">
         <br>
-        <label for="interest-rate">Interest rate (%): </label>
+        <label for="interest-rate">Annual interest rate (%): </label>
         <input id="interest-rate" type="number">
         <br>
         <button type="button" onclick="calculateSaving()">Calculate</button>
     </form>
 
     <p id="result"></p>
+    <i>Want to know your monthly contribution to have certain amount when retire? <a href="retirement-savings-calculator.html">Click here.</a></i>
 
     <!-- Script -->
     <script src="index.js"></script>

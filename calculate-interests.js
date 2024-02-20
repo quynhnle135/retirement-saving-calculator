@@ -13,19 +13,14 @@ function calculateMonthlyContribution(p, r, t) {
     return a;
 }
 
+function requireMonthlyContribution(startAge, endAge, rate, expectedAmount) {
+    let n = (endAge - startAge) * 12;
+    r = (r / 100) / 12;
+    let result = expectedAmount * (r / (Math.pow((1 + r), n) - 1));
+    return Math.round(result * 100) / 100;
+}
+
 console.log("If you contribute $500 annually to your retirement savings account with a 5% APY, after 40 years, how much will you receive? " + calculateYearlyContribution(p=500, r=5, t=40));
 console.log("If you contribute $500 each month to your retirement savings account with a 5% APY, after 40 years, how much will you receive? " + calculateMonthlyContribution(p=500, r=5, t=40));
 
-
-// function calculateRetirementSavingYearly(startAge, endAge, p, r) {
-//     let t = endAge - startAge;
-//     let a = Math.round((p * Math.pow((1 + r), t)) * 100) / 100;
-//     return a;
-// }
-
-// function calculateRetirementSavingMonthly(startAge, endAge, p, r) {
-
-// }
-
-// put $500 into the bank account every YEAR, starting from 25yo and the rate is 5%/year, how much they receive when they're 65yo
-// console.log(calculateRetirementSavingYearly(startAge=25, endAge=65, p=500, t=0.05));
+console.log(requireMonthlyContribution(startAge=30, endAge=65, rate=5, expectedAmount=1000000)); // ~$880.21

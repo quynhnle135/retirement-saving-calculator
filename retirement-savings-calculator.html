@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Savings Calculator</title>
+</head>
+<body>
+    <h1>Welcome to Retirement Savings Calculator!</h1>
+    <h3>Let's calculate your required monthly contribution to retire with a certain amount of money</h3>
+    <form>
+        <label for="current-age-1">Current age: </label>
+        <input id="current-age-1" type="number">
+        <br>
+        <label for="retirement-age-1">Age of retirement</label>
+        <input id="retirement-age-1" type="number">
+        <br>
+        <label for="interest-rate-1">Annual interest (%): </label>
+        <input id="interest-rate-1" type="number">
+        <br>
+        <label for="amount">The future value you want to have: </label>
+        <input id="amount" type="number">
+        <br>
+        <button type="button" onclick="requireMonthlyContribution()">Calculate</button>
+    </form>
+    <p id="result-1"></p>
+    <i><a href="index.html">Go back</a></i>
+    <!-- Script -->
+    <script src="index.js"></script>
+</body>
+</html>
