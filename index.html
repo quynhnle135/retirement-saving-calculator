@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Saving Calculator</title>
+</head>
+<body>
+    <h1>Welcome to Retirement Saving Calculator!</h1>
+    <form>
+        <label for="deposit-amount">How much will you deposit each time?</label>
+        <input id="deposit-amount" placeholder="Amount" type="number">
+        <br>
+        <label for="years">How many years will you deposit?</label>
+        <input id="years" placeholder="Years" type="number">
+        <br>
+        <label for="interest-rate">What is the interest rate(%)?</label>
+        <input id="interest-rate" placeholder="Rate" type="number">
+        <br>
+        <button type="button" onclick="calculateSaving()">Calculate</button>
+    </form>
+
+    <p id="result"></p>
+
+    <!-- Script -->
+    <script src="index.js"></script>
+</body>
+</html>
