@@ -5,6 +5,6 @@
 
 # Screenshots of Application
 
-![retirement savings](screenshots/retirement-savings.png)
+![retirement savings](screenshots/retirement-saving-calculator.png)
 
-![monthly contribution](screenshots/monthly-contribution.png)
+![monthly contribution](screenshots/calculate-montly-contribution.png)
