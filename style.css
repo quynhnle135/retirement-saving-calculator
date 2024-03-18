@@ -1,32 +1,62 @@
-#result {
-    color: #FE7A36;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px 0 0 0;
+* {
+    font-family: "Space Grotesk", sans-serif;
 }
 
-#result-1 {
-    color: #FE7A36;
+#header {
     text-align: center;
-    font-size: 18px;
-    padding: 15px 0 0 0;
+    padding: 20px;
+    color: #183D3D;
 }
 
 form {
-    width: 100%;
+    width: 80%;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+.form-group label {
+    float: left;
 }
 
 .calculator-container {
     display: flex;
-    flex-direction: column;
+    margin: auto;
+    min-height: 50vh;
+    width: 400px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    background-color: #E1ECC8;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 40px;
-    margin: auto;
-    border-radius: 10px;
-    color: #280274;
-    width: 500px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #A0C49D;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+#result {
+    color: #183D3D;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0 0 0;
+}
+
+#result-1 {
+    color: #183D3D;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0 0 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
